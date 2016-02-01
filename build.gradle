@@ -1,7 +1,7 @@
 
 buildscript {
     ext.kotlin_version = '1.0.0-beta-4589'
-    ext.swordess_common_lang_version = '0.1.0'
+    ext.swordess_common_lang_version = '0.1.1'
 
     repositories {
         maven {
@@ -25,6 +25,9 @@ apply plugin: 'org.swordess.config'
 
 group 'org.swordess.common'
 version '0.1.0'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
 
 repositories {
     maven {

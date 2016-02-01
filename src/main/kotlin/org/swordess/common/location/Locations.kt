@@ -27,12 +27,12 @@ package org.swordess.common.location
 import java.util.HashSet
 
 data class Address(
-        var country: String? = null,
-        var state: String? = null,
-        var city: String? = null,
-        var region: String? = null,
-        var block: String? = null,
-        var street: String? = null)
+        var country: String = "",
+        var state: String = "",
+        var city: String = "",
+        var region: String = "",
+        var block: String = "",
+        var street: String = "")
 
 sealed class Place(open val name: String, open val code: String) {
 
